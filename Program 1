@@ -1,0 +1,24 @@
+class Student
+{
+    int id;
+    String name;
+    String dep;
+    Student(int id, String name, String dep)
+    {
+        this.id=id;
+        this.name=name;
+        this.dep=dep;
+    }
+    void display ()
+    {
+        System.out.println(id + " " + name + " " + dep);
+    }
+    public static void main(String args[])
+    {
+        Student stud1=new Student (01,"Tarun","VLSI");
+        Student stud2=new Student (02,"Barun","ECE");
+        
+        stud1.display();
+        stud2.display();
+    }
+}
