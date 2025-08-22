@@ -1,0 +1,45 @@
+Program:
+package program_3;
+
+import java.util.Scanner;
+
+public class fibonacci {
+    // Recursive method to calculate nth Fibonacci number
+    public static int fibonacci(int n) 
+    {
+        if (n <= 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of terms (n): ");
+        int n = scanner.nextInt();
+
+        System.out.print("Fibonacci sequence: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+        scanner.close();
+    }
+}
+
+Output:
+
+Enter the number of term(n): 7
+Fibonacci(i) 0 1 1 2 3 5 8
+
+Enter the number of term(n): 1
+Fibonacci(i) 1
+
+Enter the number of term(n): 0
+Fibonacci(i) 
+ 
+ 
+ 
+
