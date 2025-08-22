@@ -22,3 +22,7 @@ class Student
         stud2.display();
     }
 }
+
+output:
+01 Tarun VLSI
+02 Barun ECE
