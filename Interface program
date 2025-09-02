@@ -1,0 +1,25 @@
+Interface example 
+
+interface Test {
+    void display();
+}
+
+class Text implements Test {
+    int a = 10;               // avoid previous "cannot find symbol" error
+    public void display() {
+        System.out.println("Interface");
+    }
+}
+
+public class Main {           // <-- online compilers usually expect this
+    public static void main(String[] args) {
+        Text t = new Text();
+        t.display();
+        System.out.println(t.a);
+    }
+}
+
+output :
+
+Interface
+10
